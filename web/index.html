@@ -7,10 +7,11 @@
     <meta name="description" content="MyFit: entrenamiento biomecánico y nutrición exacta, en privado y sin conexión. Conoce la beta y sus próximas versiones." />
     <title>MyFit — Entrena con método. Come con precisión.</title>
     <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="assets/styles.css" />
     <script src="assets/site.js" defer></script>
   </head>
-  <body>
+  <body class="min-h-screen antialiased">
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
     <div class="page-glow" aria-hidden="true"></div>
 
@@ -31,7 +32,7 @@
           <a href="#versiones">Versiones / APK</a>
           <a href="#roadmap">Roadmap</a>
           <a href="#google-play">Google Play</a>
-          <a class="button button-small button-primary nav-cta" href="#versiones">Descargar APK <span aria-hidden="true">↗</span></a>
+          <a class="button button-small button-primary nav-cta" href="https://github.com/sebashuesca/MyFit/releases/download/v1.0.0/MyFit.V1.0.0.apk" data-apk-download>Descargar APK <span aria-hidden="true">↗</span></a>
         </nav>
       </div>
     </header>
@@ -45,17 +46,17 @@
             <p class="hero-tagline">Tu entrenador y nutricionista determinista en tu bolsillo.</p>
             <p class="hero-description">Entrenamiento guiado por principios de biomecánica real y nutrición calculada en gramos exactos (crudo/cocido). Sin suscripciones, sin IA generativa externa y 100% privado.</p>
             <div class="badge-row" aria-label="Estado de la aplicación">
-              <span class="badge"><span class="badge-pulse"></span> Fase Beta Activa v3.0</span>
+              <span class="badge"><span class="badge-pulse"></span> Fase Beta Activa</span>
               <span class="badge badge-outline"><svg class="icon" aria-hidden="true"><use href="#icon-lock"></use></svg> 100% Offline &amp; Seguro</span>
             </div>
             <div class="hero-actions">
-              <a class="button button-primary button-large" href="#versiones" data-apk-download>Descargar APK v3.0 (Directo) <span aria-hidden="true">↗</span></a>
+              <a class="button button-primary button-large" href="https://github.com/sebashuesca/MyFit/releases/download/v1.0.0/MyFit.V1.0.0.apk" data-apk-download>Descargar APK (GitHub v1.0.0) <span aria-hidden="true">↗</span></a>
               <a class="button button-secondary button-large" href="#google-play" aria-label="Google Play Store: próximamente">
                 <svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#34D399" d="M3.8 2.3a1.5 1.5 0 0 0-.8 1.3v16.8c0 .5.3 1 .8 1.3l9.3-9.7z"/><path fill="#79D4FF" d="m4.7 1.9 10.2 5.8-3.2 3.3z"/><path fill="#F7C65F" d="m11.7 13 3.2 3.3-10.2 5.8z"/><path fill="#FF7890" d="m15.9 8.3 4.3 2.5c1 .6 1 1.8 0 2.4l-4.3 2.5-3.6-3.7z"/></svg>
                 Próximamente en Google Play Store
               </a>
             </div>
-            <p class="availability" id="apk-availability"><svg class="icon" aria-hidden="true"><use href="#icon-info"></use></svg> El archivo APK estará disponible aquí cuando se publique la beta.</p>
+            <p class="availability" id="apk-availability"><svg class="icon" aria-hidden="true"><use href="#icon-info"></use></svg> Descarga directa desde GitHub Releases · Archivo MyFit.V1.0.0.apk</p>
           </div>
 
           <div class="hero-visual" aria-label="Vista conceptual de la aplicación MyFit">
@@ -88,7 +89,7 @@
 
       <section class="section features-section" id="funciones">
         <div class="container">
-          <div class="section-heading"><div><p class="section-kicker">01 — EL MÉTODO MYFIT</p><h2>Todo lo que necesitas.<br /><span>Nada que te distraiga.</span></h2></div><p>Una experiencia construida alrededor de decisiones claras, datos útiles y tu forma real de entrenar.</p></div>
+          <div class="section-heading"><div><p class="section-kicker">01 — FUNCIONES V4.0</p><h2>Todo lo que necesitas.<br /><span>Nada que te distraiga.</span></h2></div><p>La visión funcional de MyFit v4.0: decisiones claras, datos útiles y tu forma real de entrenar. La disponibilidad puede variar según la APK publicada.</p></div>
           <div class="feature-grid">
             <article class="feature-card"><div class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#icon-activity"></use></svg></div><span class="feature-number">01 / ENTRENAMIENTO</span><h3>Divisiones de entrenamiento reales</h3><p>Mapeo inteligente de rutinas Push/Pull/Legs, Torso/Pierna y Arnold Split según tu nivel y tus días disponibles.</p><span class="card-rule"></span></article>
             <article class="feature-card"><div class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#icon-scale"></use></svg></div><span class="feature-number">02 / NUTRICIÓN</span><h3>Nutrición exacta &amp; maridaje</h3><p>Cálculos en gramos exactos, distinguiendo el estado crudo y cocido, respaldados por la base de datos del SMAE.</p><span class="card-rule"></span></article>
@@ -100,9 +101,9 @@
 
       <section class="section versions-section" id="versiones">
         <div class="container versions-grid">
-          <div class="versions-intro"><p class="section-kicker">02 — VERSIONES Y DESCARGAS</p><h2>La evolución<br /><span>en tus manos.</span></h2><p>Seguimos afinando MyFit con cada versión. Explora lo que ha cambiado y accede a la beta más reciente.</p><div class="release-note"><span class="release-dot"></span><span>Canal de distribución: <strong>Beta privada</strong></span></div></div>
+          <div class="versions-intro"><p class="section-kicker">02 — VERSIONES Y DESCARGAS</p><h2>La evolución<br /><span>en tus manos.</span></h2><p>Seguimos afinando MyFit con cada versión. Explora el historial de producto y descarga el APK publicado en GitHub.</p><div class="release-note"><span class="release-dot"></span><span>APK disponible: <strong>GitHub Release v1.0.0</strong></span></div></div>
           <div class="version-list">
-            <article class="version-card current"><div class="version-top"><span class="version-label">VERSIÓN ACTUAL</span><span class="current-mark">● BETA ACTIVA</span></div><div class="version-body"><div><h3>MyFit <span>v3.0</span></h3><p>Motor de divisiones biomecánicas, tabla SMAE ampliada y maridaje dinámico.</p></div><a class="button button-primary version-download" href="#versiones" data-apk-download>Descargar APK <span aria-hidden="true">↗</span></a></div></article>
+            <article class="version-card current"><div class="version-top"><span class="version-label">HITO DE PRODUCTO</span><span class="current-mark">● BETA ACTIVA</span></div><div class="version-body"><div><h3>MyFit <span>v3.0</span></h3><p>Motor de divisiones biomecánicas, tabla SMAE ampliada y maridaje dinámico.</p></div><a class="button button-primary version-download" href="https://github.com/sebashuesca/MyFit/releases/download/v1.0.0/MyFit.V1.0.0.apk" data-apk-download>Descargar APK v1.0.0 <span aria-hidden="true">↗</span></a></div></article>
             <article class="version-card"><div class="version-body"><div><span class="older-label">VERSIÓN ANTERIOR</span><h3>MyFit <span>v2.0</span></h3><p>UI con Jetpack Compose, barra de cuatro pestañas y 365 frases motivacionales.</p></div><span class="version-index">02</span></div></article>
             <article class="version-card"><div class="version-body"><div><span class="older-label">PRIMERA VERSIÓN</span><h3>MyFit <span>v1.0</span></h3><p>Estructura inicial de la aplicación y arquitectura Clean.</p></div><span class="version-index">01</span></div></article>
           </div>
@@ -112,7 +113,7 @@
       <section class="section roadmap-section" id="roadmap">
         <div class="container"><div class="section-heading"><div><p class="section-kicker">03 — LO QUE VIENE</p><h2>El camino<br /><span>apenas comienza.</span></h2></div><p>Una ruta clara para llevar MyFit de la beta privada a una descarga abierta y sencilla.</p></div>
           <div class="roadmap-grid">
-            <article class="roadmap-card active"><span class="roadmap-step">FASE 01 <span>● ACTUAL</span></span><span class="roadmap-connector"></span><h3>Beta privada</h3><p>Pruebas con usuarios y distribución directa mediante APK.</p></article>
+            <article class="roadmap-card active"><span class="roadmap-step">FASE 01 <span>● ACTUAL</span></span><span class="roadmap-connector"></span><h3>Beta directa</h3><p>Pruebas con usuarios y distribución directa mediante APK.</p></article>
             <article class="roadmap-card"><span class="roadmap-step">FASE 02 <span>◐ EN PROGRESO</span></span><span class="roadmap-connector"></span><h3>Preparación para Play</h3><p>Auditoría de Data Safety y políticas de Google Play Store.</p></article>
             <article class="roadmap-card"><span class="roadmap-step">FASE 03 <span>○ PRÓXIMAMENTE</span></span><span class="roadmap-connector"></span><h3>Lanzamiento oficial</h3><p>Publicación en Google Play Store para descarga directa.</p></article>
           </div>
@@ -123,8 +124,6 @@
     </main>
 
     <footer class="site-footer"><div class="container"><div class="footer-top"><div><a class="brand footer-brand" href="#inicio"><img src="assets/logo.svg" alt="" width="40" height="40" /><span>My<span>Fit</span></span></a><p>Entrena con método.<br />Come con precisión.</p></div><div class="footer-links"><div><strong>EXPLORAR</strong><a href="#funciones">Funciones</a><a href="#versiones">Versiones / APK</a><a href="#roadmap">Roadmap</a></div><div><strong>LEGAL</strong><a href="privacidad.html">Política de Privacidad</a><a href="terminos.html">Términos de Servicio</a></div></div></div><div class="medical-notice"><svg class="icon" aria-hidden="true"><use href="#icon-info"></use></svg><p><strong>Aviso médico.</strong> MyFit es una herramienta informativa y de planificación basada en algoritmos fisiológicos deterministas. No sustituye el diagnóstico o seguimiento de un profesional de la salud o del deporte.</p></div><div class="footer-bottom"><span>© <span id="current-year">2026</span> MyFit. Todos los derechos reservados.</span><span>Diseñado para avanzar contigo <span aria-hidden="true">✦</span></span></div></div></footer>
-
-    <div class="toast" id="download-toast" role="status" aria-live="polite" hidden>El APK v3.0 todavía no está publicado. Vuelve pronto para descargarlo aquí.</div>
 
     <svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><symbol id="icon-lock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14v3"/></symbol><symbol id="icon-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></symbol><symbol id="icon-activity" viewBox="0 0 24 24"><path d="M3 12h4l3-7 4 14 3-7h4"/></symbol><symbol id="icon-scale" viewBox="0 0 24 24"><path d="M12 3v17M5 7h14M4 7l-2 5h6L6 7m12 0-2 5h6l-2-5M8 20h8"/></symbol><symbol id="icon-book" viewBox="0 0 24 24"><path d="M12 6c-3-2-6-2-9-1v14c3-1 6-1 9 1 3-2 6-2 9-1V5c-3-1-6-1-9 1Zm0 0v14"/></symbol></svg>
   </body>
